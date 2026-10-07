@@ -16,7 +16,7 @@ jobs:
       uses: microsoft/setup-msbuild@v2
 
     - name: Build Solution
-      run: msbuild clientmod.sln /p:Configuration=Release /p:Platform=x86 /p:WindowsTargetPlatformVersion=10.0
+      run: msbuild clientmod.sln /p:Configuration=Release /p:Platform=x86 /p:WindowsTargetPlatformVersion=10.0 /p:PlatformToolset=v143
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
